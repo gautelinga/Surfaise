@@ -33,7 +33,7 @@ This creates a file `visualize.xdmf` that you can open in e.g. ParaView.
 * FEniCS (Dolfin, UFL, ...)
 * SymPy
 * NumPy
-* json
+* simplejson
 * cloudpickle
 
 ### Developed and maintained by:
