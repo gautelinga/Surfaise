@@ -6,6 +6,7 @@ from surfaise.common.cmd import mpi_is_root
 import numpy as np
 import os
 import glob
+import sys
 
 """
 Generic post-processing tool.
@@ -190,5 +191,6 @@ def main():
     call_method(method, methods, scripts_folder, ts, cmd_kwargs)
 
 
-if __name__ == "__main__" or __name__ == "surfaise.postprocess":
+cmdkey = str(sys.argv[0]).split("/")[-1]
+if __name__ == "__main__" or ".py" not in cmdkey:
     main()
