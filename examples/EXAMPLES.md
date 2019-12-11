@@ -6,8 +6,8 @@ To run an example script -- here a PFC-type Block Copolymer model on a bumpy sur
 python3 pfcbc_bumpy.py
 ```
 The included demos are:
-* `pfcbc_bumpy.py`: Quenching of a PFC-type Block Copolymer model on a bumpy surface [[1]]
-* `ns_on_torus.py`: Fluid flow (Navier-Stokes) on a toroidal surface [[1]]
+* `pfcbc_bumpy.py`: Quenching of a PFC-type Block Copolymer model on a bumpy surface [[1]](#1)
+* `ns_on_torus.py`: Fluid flow (Navier-Stokes) on a toroidal surface [[1]](#1)
 * `pfcbc_gauss.py`: Annealing of a PFC-type Block Copolymer model on a single Gaussian bump.
 
 <p align="center">
@@ -20,4 +20,4 @@ The included demos are:
 * Gaute Linga
 
 
-[[1]] Nielsen, B. F., Linga, G., Christensen, A., & Mathiesen, J. (2019). Substrate curvature governs texture orientation in thin films of smectic block copolymers. arXiv preprint arXiv:1911.13163.
+<a id="1">[1]</a> Nielsen, B. F., Linga, G., Christensen, A., & Mathiesen, J. (2019). Substrate curvature governs texture orientation in thin films of smectic block copolymers. arXiv preprint arXiv:1911.13163.
