@@ -6,9 +6,9 @@ To run an example script -- here a PFC-type Block Copolymer model on a bumpy sur
 python3 pfcbc_bumpy.py
 ```
 The included demos are:
-* `pfcbc_bumpy.py`: Quenching of a PFC-type Block Copolymer model on a bumpy surface [[1]](#1)
-* `ns_on_torus.py`: Fluid flow (Navier-Stokes) on a toroidal surface [[1]](#1)
-* `pfcbc_gauss.py`: Annealing of a PFC-type Block Copolymer model on a single Gaussian bump.
+* `pfcbc_bumpy.py`: Quenching of a PFC-type Block Copolymer model on a bumpy surface. [[1]](#1)
+* `ns_on_torus.py`: Fluid flow (Navier-Stokes) on a toroidal surface. 
+* `pfcbc_gauss.py`: Annealing of a PFC-type Block Copolymer model on a single Gaussian bump. [[1]](#1)
 
 <p align="center">
     <img src="ns.gif" width=587 height=400 alt="Navier-Stokes flow on torus, w. forcing."/>
