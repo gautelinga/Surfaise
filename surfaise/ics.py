@@ -29,6 +29,25 @@ class RandomIC(GenericIC):
         for d in range(self.dims):
             values[d] = self.amplitude*(2*random.random()-1)
 
+class NematicPerturbationIC(GenericIC):
+    def __init__(self, u_, x0=0, y0=0, r=1, theta0=0, amplitude=1.0, dims=1, **kwargs):
+        self.amplitude = amplitude
+        self.dims = dims
+        self.x0 = x0
+        self.y0 = y0
+        self.r = r
+        self.t0 = theta0
+        super().__init__(u_, **kwargs)
+
+    def eval(self, values, x):
+        super().eval(values, x)
+        dtheta = self.amplitude*(2*random.random()-1) * np.heaviside(self.r**2-(x[0]-self.x0)**2-(x[1]-self.y0)**2,0)
+        for d in range(self.dims):
+            values[d] = 0
+            if d == 0:
+                values[d] = 2 * np.cos(self.t0+dtheta)*np.sin(self.t0+dtheta)
+            if d == 2:
+                values[d] = 2 * (np.cos(self.t0+dtheta)**2 - 0.5)
 
 class StripedIC(GenericIC):
     def __init__(self, u_, alpha=0.0, q0=1./np.sqrt(2),
